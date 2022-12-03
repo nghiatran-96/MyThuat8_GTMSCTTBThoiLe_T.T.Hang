@@ -1,0 +1,1791 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>Một số công trình tiêu biểu của MT thời Lê - Trường PTDTBT THCS Hướng Phùng - Hướng Hóa - Quảng Trị</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='css/jquery-ui.css'>    <link rel='stylesheet' type='text/css' href='css/jqmath.css'></head>
+<body>
+    <div id='container'>
+        <div id='mainContent'>
+            <div id='leftMainContent'>
+                <!-- Confirm Question One Page MessageBox -->
+                <div id='ConfirmAnswerRight_OnePage_Message' class='DraggablePanel'>
+                    <div id='ConfirmAnswerRight_OnePage_Message_Header'>
+                        <p class='QuestionResultPanelHeader_Content'> Thông báo </p><img class='QuestionResultPanelHeader_btnClose' src='images/btnClose.png'>
+                    </div>
+                    <div id='ConfirmAnswerRight_OnePage_Content'>
+                        <img id='ConfirmAnswerRight_OnePage_Content_IMG' src='images/button/Question/messageOK.png'>
+                        <div id='ConfirmAnswerRight_OnePage_Content_Content'>Đồng ý</div>
+                        <div id='ConfirmAnswerRight_OnePage_Content_btnAccept'>Đồng ý</div>
+                    </div>
+                </div>
+                <!-- End Confirm Question One Page MessageBox -->
+                <!-- Result Panel -->
+                <div id='QuestionResultPanel' class='DraggablePanel'>
+                    <div class='QuestionResultPanelHeader'>
+                        <p class='QuestionResultPanelHeader_Content'> Thông báo </p>
+                        <img class='QuestionResultPanelHeader_btnClose' src='images/btnClose.png'>
+                    </div>
+                    <div class='QuestionResultPanelContent'>
+                        <div class='QuestionResultPanelContent_Top'>
+                            <div class='QuestionResultPanelContent_Top_Left'>
+                                <p class='QuestionResultPanelContent_Top_Text'> Nhóm câu hỏi: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Tổng số câu: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Số câu đúng: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Số điểm / Tổng điểm: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Tỷ lệ % đúng:</p>
+                            </div>
+                            <div class='QuestionResultPanelContent_Top_Right'>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                            </div>
+                        </div>
+                        <div class='QuestionResultPanelContent_Middle'>
+                            <table class='QuestionResultPanelContent_Middle_Table'>
+                                <tr>
+                                    <td class='QuesResultFirstRow text-center' style='width:7%'>STT</td>
+                                    <td class='QuesResultFirstRow text-center' style='width:35%'>Tên câu hỏi</td> 
+                                    <td class='QuesResultFirstRow text-center' style='width:20%'>Loại câu</td>
+                                    <td class='QuesResultFirstRow text-center' style='width:15%'>Kết quả</td>
+                                    <td class='QuesResultFirstRow text-center' style='width:15%'>Xem lại</td>
+                                </tr>
+                                <tr>
+                                    <td class='QuesResultRow text-center' style='width:7%'></td>
+                                    <td class='QuesResultRow' style='width:35%'></td> 
+                                    <td class='QuesResultRow text-center' style='width:20%'></td>
+                                    <td class='QuesResultRow text-center' style='width:15%'></td>
+                                    <td class='QuesResultRow text-center' style='width:15%'></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class='QuestionResultPanelContent_Bottom' style='cursor: pointer;'>Đồng ý
+                        </div>
+                    </div>
+                </div>
+                <!-- End result Panel -->
+                <!-- View question panel -->
+                    <div id='ViewQuestionPanel' class='DraggablePanel'>
+                        <div class='ViewQuestionPanel_Header'>
+                            <img class='QuestionResultPanelHeader_btnClose' src='images/btnClose.png'>
+                        </div>
+                        <div class='ViewQuestionPanel_Content'>
+                             <div class='ViewQuestionPanel_Content_Top'></div>
+                            <div class='ViewQuestionPanel_Content_Bottom'>
+                                <div class='ViewQuestionPanel_Content_Bottom_AnswerList' style='width: 100%; height: 100%;'>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End view question panel -->
+                <!-- Result Panel No Score -->
+                <div id='QuestionResultPanel_NoScore' class='DraggablePanel'>
+                    <div class='QuestionResultPanelHeader_NoScore'>
+                        <p class='QuestionResultPanelHeader_Content'>Thông báo</p>
+                        <img class='QuestionResultPanelHeader_btnClose' src='images/btnClose.png'>
+                    </div>
+                    <div class='QuestionResultPanelContent_NoScore'>
+                        <div class='QuestionResultPanelContent_Top_NoScore'>
+                            <div class='QuestionResultPanelContent_Top_Left_NoScore'>
+                                <p class='QuestionResultPanelContent_Top_Text'> Nhóm câu hỏi: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Tổng số câu: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Số câu đúng: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Số điểm / Tổng điểm: </p>
+                                <p class='QuestionResultPanelContent_Top_Text'> Tỷ lệ % đúng: </p>
+                            </div>
+                            <div class='QuestionResultPanelContent_Top_Right_NoScore'>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                                <p class='QuestionResultPanelContent_Top_Text'></p>
+                            </div>
+                        </div>
+                        <div class='QuestionResultPanelContent_Middle_NoScore'> Đỗ roài </div>
+                        <div class='QuestionResultPanelContent_Bottom_NoScore_Left' style='cursor: pointer;'>Xem lại</div>
+                        <div class='QuestionResultPanelContent_Bottom_NoScore_Right' style='cursor: pointer;'>Tiếp tục</div>
+                    </div>
+                </div>
+                <!-- End result Panel No Score -->
+                <!-- List question panel No Score -->
+                    <div id='ListQuestionPanel_NoScore' class='DraggablePanel'>
+                        <div class='QuestionResultPanelHeader_NoScore'>
+                            <img class='QuestionResultPanelHeader_btnClose' src='images/btnClose.png'>
+                    </div>
+                        <div class='QuestionResultPanelContent_NoScore'>
+                            <table class='QuestionResultPanelContent_Middle_Table'>
+                                <tr>
+                                    <td class='QuesResultFirstRow text-center' style='width:7%'>STT</td>
+                                    <td class='QuesResultFirstRow text-center' style='width:35%'>Tên câu hỏi</td> 
+                                    <td class='QuesResultFirstRow text-center' style='width:20%'>Loại câu</td>
+                                    <td class='QuesResultFirstRow text-center' style='width:15%'>Kết quả</td>
+                                    <td class='QuesResultFirstRow text-center' style='width:15%'>Xem lại</td>
+                                </tr>
+                                <tr>
+                                    <td class='QuesResultRow text-center' style='width:7%'></td>
+                                    <td class='QuesResultRow' style='width:35%'></td> 
+                                    <td class='QuesResultRow text-center' style='width:20%'></td>
+                                    <td class='QuesResultRow text-center' style='width:15%'></td>
+                                    <td class='QuesResultRow text-center' style='width:15%'></td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+                <!-- End list question panel No Score -->
+<div id='CELPage_41' jumpid='41'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+
+<div id='CELPage_41_Demonstration' class='hidden' style ="height:0px; width:0px; position: absolute; top:0;left:0"> 
+    <video startTimeDemontration='0' class='VideoDemonstration' src='' silent='False' type = 'video/mp4'></video>
+    <audio startTimeDemontration='0' class='AudioDemonstration' src='Data/95801300-6b92-4ffc-9ede-177878b93cd4.mp3' silent='False' type='audio/mpeg'> </audio>
+</div><div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_41'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_41_1' ></div>
+</div>
+<div id = 'CTextFrame_0_0' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 84.375%; top: 6.25%;  height: 25%;left: 7.8125%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '84.375' hFrame='25' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_0_0_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_0_0_sp00" class="resizeText" size = "32" style =" font-size: 32px;font-family:'Times_New_Roman';  color: #052F61;font-weight: bold; ">PHÒNG GIÁO DỤC - ĐÀO TẠO HƯỚNG HÓA</span>
+</p>
+<p id = "CTextFrame_0_0_Paragraph_1" style = "text-align:center;">
+<span id = "CTextFrame_0_0_sp10" class="resizeText" size = "32" style =" font-size: 32px;font-family:'Times_New_Roman';  color: #052F61;font-weight: bold; text-decoration: underline; ">TRƯỜNG PTDTBT THCS HƯỚNG PHÙNG</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_0_1' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 84.6270161290323%; top: 24.8790322580645%;  height: 58.75%;left: 7.68649193548386%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '84.6270161290323' hFrame='58.75' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_0_1_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_0_1_sp00" class="resizeText" size = "61.6666666666667" style =" font-size: 61.6666666666667px;font-family:'Times_New_Roman';  color: #FF0000;font-weight: bold; ">  CUỘC THI THIẾT KẾ BÀI GIẢNG     </span>
+</p>
+<p id = "CTextFrame_0_1_Paragraph_1" style = "text-align:center;">
+<span id = "CTextFrame_0_1_sp10" class="resizeText" size = "61.6666666666667" style =" font-size: 61.6666666666667px;font-family:'Times_New_Roman';  color: #FF0000;font-weight: bold; ">ELEARNING CẤP TRƯỜNG</span>
+</p>
+<p id = "CTextFrame_0_1_Paragraph_2" style = "text-align:center;">
+
+</br>
+</p>
+<p id = "CTextFrame_0_1_Paragraph_3" style = "text-align:center;">
+<span id = "CTextFrame_0_1_sp30" class="resizeText" size = "46.6666666666667" style =" font-size: 46.6666666666667px;font-family:'Times_New_Roman';  color: #C55A11;font-weight: bold; ">Giáo viên: Trần Thị Hằng</span>
+</p>
+<p id = "CTextFrame_0_1_Paragraph_4" style = "text-align:center;">
+<span id = "CTextFrame_0_1_sp40" class="resizeText" size = "46.6666666666667" style =" font-size: 46.6666666666667px;font-family:'Times_New_Roman';  color: #C55A11;font-weight: bold; ">Tổ: Năng khiếu</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_1' jumpid='1'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_b59879932ead7392b5c8025e7dd3ede9_CELPage_1'>
+<svg height='800' width='1280'>
+<g style= 'position:absolute ; z-index= 3' Fill='#2a92ca' fill-opacity='1'>
+<path d='M0,0 L0,158.16667 130.219,244.24952 176.9689,244.24952 353.2189,131.99974 z' transform='translate(0,555), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 4' Fill='#2a92ca' fill-opacity='1'>
+<path d='M0,104.81141 L23.51602,104.81141 303.91172,17.56191 162.01582,0 z' transform='translate(267,684), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 5' Fill='#2a92ca' fill-opacity='1'>
+<path d='M97.625,36 L139.5,0 0,35.625 z' transform='translate(736,760), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 8' Fill='#2a92ca' fill-opacity='0.5'>
+<path d='M0,116.77133 L290.062,116.77133 59.3119999999999,0 z' transform='translate(805,717), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 8' Fill='#2a92ca' fill-opacity='0.5'>
+<path d='M557.375,454.5 L0,454.5 0,118.5 111.375,0 z' transform='translate(0,467), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 1' Fill='#85cee1' fill-opacity='0.8'>
+<path d='M186.5,0.5 L186.5,93.5 0,0 z' transform='translate(1093,0), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 2' Fill='#85cee1' fill-opacity='0.3'>
+<path d='M0,0 L0,362.375 391.25,510.375 z' transform='translate(0,283), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 6' Fill='#85cee1' fill-opacity='1'>
+<path d='M0,0 L99.625,50.5 557.25,50.5 557.25,19.875 z' transform='translate(883,764), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 7' Fill='#85cee1' fill-opacity='0.8'>
+<path d='M386.375,0 L606,118.75 0,119 z' transform='translate(327,714), scale(1,1)' ></g>
+</svg>
+<div class='_b59879932ead7392b5c8025e7dd3ede9_CELPage_1_1' ></div>
+</div>
+<div id = 'CELAudio_1_0' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_1_0' src='Data/png/4c652ca1-c28f-486c-a5e5-1fea69385447.png' style = 'width: 100%; height: 100%; transform: rotate(1deg);-moz-transform: rotate(1deg);-webkit-transform: rotate(1deg); -o-transform: rotate(1deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_1_0' startTime = '0' maxVol='100' src='Data\CELAudio_1_0.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_1_1' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 38.679435483871%; top: 19.758064516129%;  height: 5.38291666666667%;left: 28.9818548387097%;'>
+<svg class = 'svgFrame' borderwidth = '2' wFrame = '38.679435483871' hFrame='5.38291666666667' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= '#2A92CA' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_1_1_Paragraph_0" style = "text-align:left;">
+<span class ='resizeText' size ='37.3333333333333' style='font-family: Tahoma; font-size: 37.3333333333333px; font-style: Normal; font-weight:normal;text-decoration: Normal;  color: #444343;text-shadow:
+                              -1px -1px 0 #85CEE1,
+                              -1px 1px 0 #85CEE1,
+                              -1px 0 0 #85CEE1,
+                              1px -1px 0 #85CEE1,
+                              1px 1px 0 #85CEE1,
+                              1px 0 0 #85CEE1,
+                              0 -1px 0 #85CEE1,
+                              0 1px 0 #85CEE1;'>Bài 5. Thường thức mỹ thuật</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_1_2' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 51.4112903225806%; top: 31.7036290322581%;  height: 3.625%;left: 18.1350806451613%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '51.4112903225806' hFrame='3.625' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_1_2_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_1_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 90.8420362903226%; top: 34.258064516129%;  height: 17.875%;left: 4.44178427419355%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '90.8420362903226' hFrame='17.875' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_1_3_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_1_3_sp00" class="resizeText" size = "58.6666666666667" style =" font-size: 58.6666666666667px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">SƠ LƯỢC VỀ MỸ THUẬT THỜI LÊ </span>
+</p>
+<p id = "CTextFrame_1_3_Paragraph_1" style = "text-align:center;">
+<span id = "CTextFrame_1_3_sp10" class="resizeText" size = "58.6666666666667" style =" font-size: 58.6666666666667px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">(TỪ THẾ KỈ XV ĐẾN ĐẦU THẾ KỈ XVIII) </span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_1_4' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 0.78125%; top: 56.2338709677419%;  height: NaN%;left: 4.91305443548387%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '0.78125' hFrame='NaN' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_1_4_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_1_5' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 19.0681199596776%; top: 3.62903225806452%;  height: 9.25%;left: 40.5745967741935%;'>
+<svg class = 'svgFrame' borderwidth = '2' wFrame = '19.0681199596776' hFrame='9.25' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= '#2A92CA' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_1_5_Paragraph_0" style = "text-align:left;">
+<span class ='resizeText' size ='64' style='font-family: Times New Roman; font-size: 64px; font-style: Normal; font-weight:500;text-decoration: Normal;  color: #FF0000;text-shadow:
+                              -1px -1px 0 #85CEE1,
+                              -1px 1px 0 #85CEE1,
+                              -1px 0 0 #85CEE1,
+                              1px -1px 0 #85CEE1,
+                              1px 1px 0 #85CEE1,
+                              1px 0 0 #85CEE1,
+                              0 -1px 0 #85CEE1,
+                              0 1px 0 #85CEE1;'> BÀI CŨ</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_1_6' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 0.12600806451613%; top: 34.8770161290323%;  height: 3.625%;left: 8.93649193548388%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '0.12600806451613' hFrame='3.625' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_1_6_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_2' jumpid='2'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_2'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_2_1' ></div>
+</div>
+<div id ='CELImage_2_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_2_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='35.2293346774194' hFrame='32.9193548387097' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_2_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_2_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='23.6214717741936' hFrame='55.5443548387097' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_2_2' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_2_2.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='38.2560483870968' hFrame='37.4717741935484' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_2_3' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_2_3' src='Data/png/407b070b-fa65-42ef-8311-c7b55462a7a7.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_2_3' startTime = '0' maxVol='50' src='Data\CELAudio_2_3.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_2_4' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 88.0695564516129%; top: 3.2983870967742%;  height: 24.9798387096774%;left: 6.58014112903225%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '88.0695564516129' hFrame='24.9798387096774' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_2_4_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_2_4_sp00" class="resizeText" size = "51.6666666666666" style =" font-size: 51.6666666666666px;font-family:'Times_New_Roman';  color: #001F60;font-weight: bold; ">Tiết 6. Thường thức Mỹ thuật.</span>
+</p>
+<p id = "CTextFrame_2_4_Paragraph_1" style = "text-align:center;">
+<span id = "CTextFrame_2_4_sp10" class="resizeText" size = "51.6666666666666" style =" font-size: 51.6666666666666px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">MỘT SỐ CÔNG TRÌNH TIÊU BIỂU </span>
+</p>
+<p id = "CTextFrame_2_4_Paragraph_2" style = "text-align:center;">
+<span id = "CTextFrame_2_4_sp20" class="resizeText" size = "51.6666666666666" style =" font-size: 51.6666666666666px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">CỦA MỸ THUẬT THỜI LÊ</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_17' jumpid='17'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+
+<div id='CELPage_17_Demonstration' class='hidden' style ="height:0px; width:0px; position: absolute; top:0;left:0"> 
+    <video startTimeDemontration='0' class='VideoDemonstration' src='' silent='False' type = 'video/mp4'></video>
+    <audio startTimeDemontration='0' class='AudioDemonstration' src='Data/95801300-6b92-4ffc-9ede-177878b93cd4.mp3' silent='False' type='audio/mpeg'> </audio>
+</div><div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_17'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_17_1' ></div>
+</div>
+<div id = 'CTextFrame_3_0' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 4.10483870967742%;  height: 9.85887096774194%;left: 16.1567540322581%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='9.85887096774194' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_3_0_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_3_0_sp00" class="resizeText" size = "62" style =" font-size: 62px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">MỤC TIÊU BÀI HỌC</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_3_1' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.1229838709679%; top: 22.875%;  height: 62.3467741935484%;left: 12.2505040322581%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.1229838709679' hFrame='62.3467741935484' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_3_1_Paragraph_0" style = "text-align:justify;">
+<span id = "CTextFrame_3_1_sp00" class="resizeText" size = "46.6666666666667" style =" font-size: 46.6666666666667px;font-family:'Times_New_Roman';  color: #001F60;">- Hiểu biết thêm một số công trình tiêu biểu của Mỹ thuật thời Lê</span>
+</p>
+<p id = "CTextFrame_3_1_Paragraph_1" style = "text-align:justify;">
+<span id = "CTextFrame_3_1_sp10" class="resizeText" size = "46.6666666666667" style =" font-size: 46.6666666666667px;font-family:'Times_New_Roman';  color: #001F60;">- Phân biệt được Mỹ thuật thời Lê với các thời kì Lý - Trần.</span>
+</p>
+<p id = "CTextFrame_3_1_Paragraph_2" style = "text-align:justify;">
+<span id = "CTextFrame_3_1_sp20" class="resizeText" size = "46.6666666666667" style =" font-size: 46.6666666666667px;font-family:'Times_New_Roman';  color: #001F60;">- Thêm yêu quý và bảo vệ những giá trị văn hóa của cha ông.</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_5' jumpid='5'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_5'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_5_1' ></div>
+</div>
+<div id ='CELImage_4_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_4_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='38.2535282258065' hFrame='42.1935483870968' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_4_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_4_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='38.7449596774193' hFrame='42.9153225806452' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_4_2' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_4_2' src='Data/png/aa4acd53-5953-40c9-a44e-9d48f078cb24.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_4_2' startTime = '0' maxVol='50' src='Data\CELAudio_4_2.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_4_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 48.7701612903226%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='48.7701612903226' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_4_3_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_4_3_sp00" class="resizeText" size = "49.6666666666667" style =" font-size: 49.6666666666667px;font-family:'Times_New_Roman';  color: #001F60;font-weight: bold; ">Chùa Keo (Thái Bình) </span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_4_4' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 0.78125%; top: 120.04435483871%;  height: NaN%;left: 56.71875%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '0.78125' hFrame='NaN' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_4_4_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_4_5' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 99.6622983870966%; top: 53.9233870967742%;  height: 39.1612903225806%;left: 0.153729838709675%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '99.6622983870966' hFrame='39.1612903225806' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_4_5_Paragraph_0" style = "text-align:justify;">
+
+</br>
+</p>
+<p id = "CTextFrame_4_5_Paragraph_1" style = "text-align:justify;">
+
+</br>
+</p>
+<p id = "CTextFrame_4_5_Paragraph_2" style = "text-align:justify;">
+<span id = "CTextFrame_4_5_sp20" class="resizeText" size = "34" style =" font-size: 34px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;- Ở huyện Vũ Thư, Tỉnh Thái Bình.</span>
+</p>
+<p id = "CTextFrame_4_5_Paragraph_3" style = "text-align:justify;">
+<span id = "CTextFrame_4_5_sp30" class="resizeText" size = "34" style =" font-size: 34px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;- Chùa Keo là di tích lịch sử - văn hóa cấp quốc gia đặc biệt, bao gồm hai cụm kiến trúc: Khu Chùa là nơi thờ phật và khu Đền thờ thánh đức Dương Không Lộ - Vị đại sư thời nhà Lý có công dựng chùa.</span>
+</p>
+<p id = "CTextFrame_4_5_Paragraph_4" style = "text-align:justify;">
+<span id = "CTextFrame_4_5_sp40" class="resizeText" size = "34" style =" font-size: 34px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;- Được xây dựng từ thời Lý. Gồm 154 gian, có tường bao quanh 4 phía.</span>
+</p>
+<p id = "CTextFrame_4_5_Paragraph_5" style = "text-align:justify;">
+<span id = "CTextFrame_4_5_sp50" class="resizeText" size = "34" style =" font-size: 34px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;- Cửa Tam quan - Khu Tam Bảo thờ phật, khu điện thờ thánh nằm trên một đường trục.</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_6' jumpid='6'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_6'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_6_1' ></div>
+</div>
+<div id ='CELImage_5_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_5_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='33.0141129032258' hFrame='66.4677419354838' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_5_1' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_5_1' src='Data/png/eb0e7fca-cb01-43de-b648-747e12984cbe.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_5_1' startTime = '0' maxVol='50' src='Data\CELAudio_5_1.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_5_2' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_5_2_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_5_2_sp00" class="resizeText" size = "46" style =" font-size: 46px;font-family:'Times_New_Roman';  color: #001F60;font-weight: bold; ">GÁC CHUÔNG</span>
+</p>
+<p id = "CTextFrame_5_2_Paragraph_1" style = "text-align:center;">
+<span id = "CTextFrame_5_2_sp10" class="resizeText" size = "46" style =" font-size: 46px;font-family:'Times_New_Roman';  color: #001F60;font-weight: bold; ">(Là công trình tiêu biểu nhất của chùa Keo)</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_5_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 61.1038306451613%; top: 22.875%;  height: 62.75%;left: 1.66582661290324%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '61.1038306451613' hFrame='62.75' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_5_3_Paragraph_0" style = "text-align:justify;">
+
+</br>
+</p>
+<p id = "CTextFrame_5_3_Paragraph_1" style = "text-align:justify;">
+<span id = "CTextFrame_5_3_sp10" class="resizeText" size = "35.3333333333333" style =" font-size: 35.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;&nbsp;&nbsp;Gác Chuông chùa Keo được làm theo kiểu chồng diêm cổ nhưng có tới ba tầng, 12 mái, kiến trúc mặt bằng theo hình vuông, có nhiều cạnh 8,53 x 8,92m (diện tích 72m2), độ cao từ nền tới bờ nóc là 11,5m.</span>
+</p>
+<p id = "CTextFrame_5_3_Paragraph_2" style = "text-align:justify;">
+<span id = "CTextFrame_5_3_sp20" class="resizeText" size = "35.3333333333333" style =" font-size: 35.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;&nbsp;&nbsp;Gác Chuông hoàn toàn bằng gỗ, chạm khắc trang trí mỹ thuật tôn vẻ đẹp lộng lẫy, được đánh giá là công trình gác chuông to đẹp vào hàng bậc nhất  của các chùa cổ Việt Nam.</span>
+</p>
+<p id = "CTextFrame_5_3_Paragraph_3" style = "text-align:justify;">
+<span id = "CTextFrame_5_3_sp30" class="resizeText" size = "35.3333333333333" style =" font-size: 35.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;">&nbsp;&nbsp;&nbsp;Ở mỗi tầng của gác Chuông đều được làm 4 mái, mỗi mái đều có đầu đao cong mềm mại.</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_10' jumpid='10'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_10'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_10_1' ></div>
+</div>
+<div id ='CELVideo_6_0' class ='resizeFrame' size='0' >
+<svg class = 'svgFrame' borderwidth= '0' wFrame='99.5463709677419' hFrame='98.7903225806452' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= '#000000' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+<video id = 'vid_CELVideo_6_0' startTime ='0' source src='Data\CELVideo_6_0.mp4' maxVol='50' maxReplay='0' type = 'video/mp4' style='width: 100%; height: 100%; top: 0%; left: 0%; object-fit: fill; position: absolute;'>
+
+</video>
+
+</div>
+
+
+<div id = 'CTextFrame_6_1' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 0.78125%; top: 7.54435483870968%;  height: NaN%;left: 22.8225806451613%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '0.78125' hFrame='NaN' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_6_1_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_7' jumpid='7'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_7fcaf46435d6d0465ca88197f3ec38e4_CELPage_7'>
+<svg height='800' width='1280'>
+<g style= 'position:absolute ; z-index= 10' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,120.55062 L6.74170000000004,127.37563 125.1586,20.66711 100.0755,0 z' transform='translate(135,529), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 12' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,89.67182 L6.20000000000005,99.03849 142.6989,22.12421 123.5115,0 z' transform='translate(149,576), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 14' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,59.62777 L3.79169999999999,68.50284 151.2897,27.16815 137.5399,0 z' transform='translate(160,625), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 16' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,26.55003 L1.45000000000005,36.50003 153.6948,28.3333699999999 146.1117,0 z' transform='translate(165,681), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 18' Fill='#5cace2' fill-opacity='1'>
+<path d='M0.113000000000056,0 L0,12.95 153.1127,36.32503 147.5489,7.82500000000005 z' transform='translate(166,729), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 2' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,6.12036000000001 L28.58901,0 34.93824,167.09961 23.79142,166.90777 z' transform='translate(30,455), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 4' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,158.30133 L9.69999999999999,159.75133 38.70005,0 6.45001000000002,0 z' transform='translate(76,464), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 6' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,149.39557 L7.70049999999998,152.75207 71.89267,5.83458000000002 43.22416,0 z' transform='translate(96,478), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 8' Fill='#5cace2' fill-opacity='1'>
+<path d='M0,134.53998 L9.11667,139.15665 101.94595,8.83233000000001 76.11367,0 z' transform='translate(115,500), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 1' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M40.666274,164.33333 L53.499271,161.70833 28.832604,0 0,4.49967999999998 z' transform='translate(0,463), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 11' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0,106.57936 L6.5003999999999,115.91301 131.1745,26.74909 117.6737,0 z' transform='translate(142,549), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 13' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0,77.75 L3.75,87.75 143,26.75 136,0 z' transform='translate(155,597), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 15' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0,42 L1.5,54.5 148,29.25 148,0 z' transform='translate(163,652), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 17' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M1.5003999999999,8.83320000000003 L0,18.9999 147.0355,27.6658 152.7032,0 z' transform='translate(166,709), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 19' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M2.5,0 L0,9.75 148.5,52.25 154.5,24 z' transform='translate(164,741), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 21' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M1.4214908,4.4285703 C1.4214908,4.4285703 5.6303851,4.9923599 4.7137319,9.4091183 4.0615102,12.551753 0.50000003,12.056802 0.50000003,12.056802 0.50000003,12.056802 4.5466552,23.158932 18.416895,22.390383 30.177683,21.738718 36.337927,13.51246 36.337927,13.51246 36.337927,13.51246 32.419654,4.4476721 20.92081,1.4378337 8.5039371,-1.8123002 1.4214908,4.4285703 1.4214908,4.4285703 z' transform='translate(119,308), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 22' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0.0419299999999794,11.7874999999999 C0.0419299999999794,11.7874999999999 4.20859999999999,13.2871 5.87525999999997,10.4538 5.87525999999997,10.4538 8.41741999999999,6.74749999999995 4.12549999999999,3.66549999999984 4.12549999999999,3.66549999999984 37.29669,0 38.9219,32.8616999999999 38.9219,32.8616999999999 4.58391999999998,36.2979 0,11.7660999999998 z' transform='translate(187,400), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 23' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M16.54179,24.8258000000001 C15.10608,24.154 0,16.5646999999999 12.27454,0 12.27454,0 29.9516599999999,10.0517 21.6911700000001,23.3017 21.6911700000001,23.3017 19.85754,20.4583 17.98258,21.1042 16.10762,21.75 16.54179,24.8258000000001 16.54179,24.8258000000001 z' transform='translate(300,391), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 3' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M6.18726000000001,166.75 L17.56276,167.625 25.37608,7.25 0,0 z' transform='translate(59,455), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 5' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0,160.85134 L8.99964999999997,163.85169 52.99768,14.16861 28.9984,0 z' transform='translate(86,464), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 7' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0,146.3125 L11.25,151.9375 86.875,16.5625 63.625,0 z' transform='translate(104,484), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 9' Fill='#8ec7ed' fill-opacity='1'>
+<path d='M0,130.875 L10.625,140.375 111,21.125 92,0 z' transform='translate(124,509), scale(1,1)' ></g>
+<g style= 'position:absolute ; z-index= 20' Fill='#80a2b9' fill-opacity='1'>
+<path d='M20.5,98.25117 L0,6.25117 C0,6.25117 17.24979,0 35.74993,3.62557000000004 56.20525,7.63430000000005 102.0927,25.22072 110.7498,79.58426 114.4987,103.12605 112.49889,108.25109 109.49987,121.00117 z' transform='translate(41,624), scale(1,1)' ></g>
+</svg>
+<div class='_7fcaf46435d6d0465ca88197f3ec38e4_CELPage_7_1' ></div>
+</div>
+<div id ='CELImage_7_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_7_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='100.912298387097' hFrame='100.004032258065' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_7_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_7_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='67.0967741935484' hFrame='59.0443548387097' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_7_2' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_7_2' src='Data/png/0c2c166a-dcb5-455a-8f7b-fd3eda703162.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_7_2' startTime = '0' maxVol='50' src='Data\CELAudio_7_2.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_31' jumpid='31'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_01f5f905960c95388ac308364c0d50ca_CELPage_31'>
+<svg height='800' width='1280'>
+<g style= 'position:absolute ; z-index= 1' Fill='#7dc587' fill-opacity='1'>
+<path d='M1,95.75013 C1,95.75013 0,72.25013 1,67.00013 2,61.75013 7.00619,4.75013000000001 7.50671,2.75013000000001 8.00722000000002,0.750130000000013 26.02582,48.50013 26.02582,48.50013 L46.29673,36.75005 59.5604,78.2501100000001 C59.5604,78.2501100000001 56.05678,10.75001 55.30601,9.75001000000003 54.55523,8.75001000000003 82.33388,79.2501100000001 82.33388,79.2501100000001 L94.59654,10.75001 119.87259,80.2501100000001 126.87982,34.25005 141.14453,73.5001 167.92215,58.25008 181.68634,74.2501 220.97686,12.75002 C220.97686,12.75002 232.48874,75.7501 234.24055,75.7501 235.99235,75.7501 243.75035,45.00006 243.75035,45.00006 L263.02021,67.25009 286.79472,45.75006 304.06255,84.5001100000001 343.8536,46.50006 363.62397,79.0001100000001 391.65287,48.00006 402.91451,77.2501 391.90313,16.7500200000001 425.18746,69.25009 438.70138,57.25008 C438.70138,57.25008 444.45729,88.00012 445.45832,88.00012 446.45935,88.00012 463.22664,34.25005 463.22664,34.25005 L484.2483,82.0001100000001 498.01248,58.75008 518.28342,73.5001 C518.28342,73.5001 523.28855,39.50005 522.53777,36.25005 L547.31295,71.3751 563.57969,60.75008 563.9551,81.5001100000001 578.34491,36.00005 591.35832,90.75012 624.39238,73.2501 649.9187,91.37512 640.4089,41.12506 656.05002,72.3751 670.43988,41.00006 673.19272,72.8751 682.3271,55.1250700000001 713.73445,85.37512 720.86679,40.87506 741.6382,94.37513 765.0373,24.25003 789.0621,78.2501100000001 806.3299,40.87506 824.5988,79.5001100000001 835.485,72.7501 834.2337,70.6251 848.6235,0 867.3929,46.5000700000001 887.2883,35.50005 900.552,76.1251 896.5479,9.37502000000001 923.826,77.1251100000001 936.3388,9.62502000000001 961.1561,78.33344 967.6625,33.00005 983.5118,71.33343 1008.7045,56.66675 1022.7186,72.16677 1061.5915,11.66669 1075.1055,72.83343 1084.6153,43.50006 1103.6348,65.33342 1128.16,44.50006 1146.3454,82.83345 1184.5511,45.3334 1204.0716,76.33344 1231.9339,46.5000700000001 1244.7801,76.5001100000001 1233.2682,15.33336 1266.8027,65.83343 1279.8161,56.16675 1282.1519,63.33342 1282.1519,95.50013 z' transform='translate(0,703), scale(1,1)' ></g>
+</svg>
+<div class='_01f5f905960c95388ac308364c0d50ca_CELPage_31_1' ></div>
+</div>
+<div id ='CELImage_8_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_8_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='103.392137096774' hFrame='100.810483870968' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_8_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_8_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='40.3679435483871' hFrame='92.2741935483871' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_8_2' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_8_2' src='Data/png/07f94e69-caa0-4691-aa03-ce188bba3896.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_8_2' startTime = '0' maxVol='50' src='Data\CELAudio_8_2.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_8_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_8_3_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_8_4' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 22.875%;  height: 62.75%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='62.75' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_8_4_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_11' jumpid='11'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_11'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_11_1' ></div>
+</div>
+<div id ='CELImage_9_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_9_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='32.1774193548387' hFrame='87.0322580645161' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_9_1' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_9_1' src='Data/png/be5f7586-028d-443f-b846-8825523775d0.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_9_1' startTime = '0' maxVol='50' src='Data\CELAudio_9_1.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_9_2' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 83.4072580645163%; top: 6.3225806451613%;  height: 8.6491935483871%;left: 17.6688508064516%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '83.4072580645163' hFrame='8.6491935483871' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_9_2_Paragraph_0" style = "text-align:justify;">
+<span id = "CTextFrame_9_2_sp00" class="resizeText" size = "39" style =" font-size: 39px;font-family:'Times_New_Roman';  color: #001F60;font-weight: bold; ">II. Điêu khắc: Tượng &quot;Phật Bà Quan âm nghìn mắt nghìn tay&quot;</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_9_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 57.3235887096774%; top: 24.4879032258064%;  height: 63.1532258064516%;left: 33.4198588709677%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '57.3235887096774' hFrame='63.1532258064516' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_9_3_Paragraph_0" style = "text-align:justify;">
+<span id = "CTextFrame_9_3_sp00" class="resizeText" size = "44" style =" font-size: 44px;font-family:'Times_New_Roman';  color: #C00000;">- Ra đời năm 1656 ở Chùa Bút Tháp, do tiên sinh họ Trương sáng tác.</span>
+</p>
+<p id = "CTextFrame_9_3_Paragraph_1" style = "text-align:justify;">
+<span id = "CTextFrame_9_3_sp10" class="resizeText" size = "44" style =" font-size: 44px;font-family:'Times_New_Roman';  color: #C00000;">- Chất liệu: Gỗ phủ sơn.</span>
+</p>
+<p id = "CTextFrame_9_3_Paragraph_2" style = "text-align:justify;">
+<span id = "CTextFrame_9_3_sp20" class="resizeText" size = "44" style =" font-size: 44px;font-family:'Times_New_Roman';  color: #C00000;">- Tượng cao 3,7m. Gồm 42 cánh tay lớn và 952 cánh tay nhỏ.</span>
+</p>
+<p id = "CTextFrame_9_3_Paragraph_3" style = "text-align:justify;">
+<span id = "CTextFrame_9_3_sp30" class="resizeText" size = "44" style =" font-size: 44px;font-family:'Times_New_Roman';  color: #C00000;">* Pho tượng có tính tượng trưng cao, được lồng ghép hàng ngàn chi tiết mà vẫn mạch lạc về bố cục, hài hòa trong diễn tả hình khối và đường nét.</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_13' jumpid='13'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_13'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_13_1' ></div>
+</div>
+<div id ='CELImage_10_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_10_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='39.0851814516129' hFrame='76.7217741935484' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_10_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_10_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='38.59375' hFrame='78.9475806451613' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_10_2' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_10_2.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='59.5438508064516' hFrame='56.6895161290322' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_10_3' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_10_3.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='56.1239919354839' hFrame='56.4395161290323' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_10_4' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_10_4' src='Data/png/003ef2f9-a30f-43f0-ac49-57a207c4cced.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_10_4' startTime = '0' maxVol='50' src='Data\CELAudio_10_4.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_10_5' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_10_5_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_10_5_sp00" class="resizeText" size = "43.6666666666667" style =" font-size: 43.6666666666667px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">TRÍCH ĐOẠN </span><span id = "CTextFrame_10_5_sp01" class="resizeText" size = "44.6666666666667" style =" font-size: 44.6666666666667px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">CỦA </span><span id = "CTextFrame_10_5_sp02" class="resizeText" size = "44.6666666666667" style =" font-size: 44.6666666666667px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">BỨC TƯỢNG</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_32' jumpid='32'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_01f5f905960c95388ac308364c0d50ca_CELPage_32'>
+<svg height='800' width='1280'>
+<g style= 'position:absolute ; z-index= 1' Fill='#7dc587' fill-opacity='1'>
+<path d='M1,95.75013 C1,95.75013 0,72.25013 1,67.00013 2,61.75013 7.00619,4.75013000000001 7.50671,2.75013000000001 8.00722000000002,0.750130000000013 26.02582,48.50013 26.02582,48.50013 L46.29673,36.75005 59.5604,78.2501100000001 C59.5604,78.2501100000001 56.05678,10.75001 55.30601,9.75001000000003 54.55523,8.75001000000003 82.33388,79.2501100000001 82.33388,79.2501100000001 L94.59654,10.75001 119.87259,80.2501100000001 126.87982,34.25005 141.14453,73.5001 167.92215,58.25008 181.68634,74.2501 220.97686,12.75002 C220.97686,12.75002 232.48874,75.7501 234.24055,75.7501 235.99235,75.7501 243.75035,45.00006 243.75035,45.00006 L263.02021,67.25009 286.79472,45.75006 304.06255,84.5001100000001 343.8536,46.50006 363.62397,79.0001100000001 391.65287,48.00006 402.91451,77.2501 391.90313,16.7500200000001 425.18746,69.25009 438.70138,57.25008 C438.70138,57.25008 444.45729,88.00012 445.45832,88.00012 446.45935,88.00012 463.22664,34.25005 463.22664,34.25005 L484.2483,82.0001100000001 498.01248,58.75008 518.28342,73.5001 C518.28342,73.5001 523.28855,39.50005 522.53777,36.25005 L547.31295,71.3751 563.57969,60.75008 563.9551,81.5001100000001 578.34491,36.00005 591.35832,90.75012 624.39238,73.2501 649.9187,91.37512 640.4089,41.12506 656.05002,72.3751 670.43988,41.00006 673.19272,72.8751 682.3271,55.1250700000001 713.73445,85.37512 720.86679,40.87506 741.6382,94.37513 765.0373,24.25003 789.0621,78.2501100000001 806.3299,40.87506 824.5988,79.5001100000001 835.485,72.7501 834.2337,70.6251 848.6235,0 867.3929,46.5000700000001 887.2883,35.50005 900.552,76.1251 896.5479,9.37502000000001 923.826,77.1251100000001 936.3388,9.62502000000001 961.1561,78.33344 967.6625,33.00005 983.5118,71.33343 1008.7045,56.66675 1022.7186,72.16677 1061.5915,11.66669 1075.1055,72.83343 1084.6153,43.50006 1103.6348,65.33342 1128.16,44.50006 1146.3454,82.83345 1184.5511,45.3334 1204.0716,76.33344 1231.9339,46.5000700000001 1244.7801,76.5001100000001 1233.2682,15.33336 1266.8027,65.83343 1279.8161,56.16675 1282.1519,63.33342 1282.1519,95.50013 z' transform='translate(0,703), scale(1,1)' ></g>
+</svg>
+<div class='_01f5f905960c95388ac308364c0d50ca_CELPage_32_1' ></div>
+</div>
+<div id ='CELImage_11_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_11_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='100.385584677419' hFrame='100.20564516129' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_11_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_11_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='57.4092741935484' hFrame='50.7782258064517' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_11_2' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_11_2' src='Data/png/26d7409c-13ca-44f5-88e5-592692bd8204.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_11_2' startTime = '0' maxVol='50' src='Data\CELAudio_11_2.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_11_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_11_3_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_14' jumpid='14'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_14'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_14_1' ></div>
+</div>
+<div id ='CELImage_12_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_12_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='45.5645161290322' hFrame='40.2943548387097' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CELAudio_12_1' style='position: absolute; display: inline-block'>
+<div style='width:100%; height:100%'>
+
+    <img class='iconAudio' idAudio ='img_CELAudio_12_1' src='Data/png/86b6d147-a0ae-4173-a319-e78c9133c8ce.png' style = 'width: 100%; height: 100%; transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg); -o-transform: rotate(0deg);'>
+</div>
+<div style='position: absolute;'>
+<audio id ='aid_CELAudio_12_1' startTime = '0' maxVol='50' src='Data\CELAudio_12_1.mp3' style='position: absolute;'>
+
+</audio>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_12_2' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_12_2_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_12_2_sp00" class="resizeText" size = "45" style =" font-size: 45px;font-family:'Times_New_Roman';  color: #C00000;font-weight: bold; ">Chạm khắc trang trí: &quot;Hình tượng con Rồng trên bia đá Vĩnh Lăng&quot;</span>
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_12_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 92.4798387096772%; top: 59.366935483871%;  height: 42.1854838709677%;left: 2.421875%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '92.4798387096772' hFrame='42.1854838709677' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_12_3_Paragraph_0" style = "text-align:justify;">
+<span id = "CTextFrame_12_3_sp00" class="resizeText" size = "36.6666666666667" style =" font-size: 36.6666666666667px;font-family:'Times_New_Roman';  color: #001F60;">- Đầu rồng to, bờm lớn ngược ra sau, mào lửa mất hẳn, thay vào đó là mộ chiếc mũi to. Mép trên của miệng rồng vẫn kéo dài nhưng được vuốt gần như thẳng ra, Rồng có râu ngắn và một chân trước thường đưa lên đỡ râu. Cổ rồng thường nhỏ hơn thân, một hiện tượng ít thấy ở những con rồng trước đó.</span>
+</p>
+<p id = "CTextFrame_12_3_Paragraph_1" style = "text-align:justify;">
+<span id = "CTextFrame_12_3_sp10" class="resizeText" size = "36.6666666666667" style =" font-size: 36.6666666666667px;font-family:'Times_New_Roman';  color: #001F60;">- Bố cục chặt chẽ, hình mẫu trọn vẹn và sự linh hoạt về đường nét. </span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_20' jumpid='20'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+
+<div id='CELPage_20_Demonstration' class='hidden' style ="height:0px; width:0px; position: absolute; top:0;left:0"> 
+    <video startTimeDemontration='0' class='VideoDemonstration' src='' silent='False' type = 'video/mp4'></video>
+    <audio startTimeDemontration='0' class='AudioDemonstration' src='Data/fa6ec56e-34c4-4f10-994a-09e1bf437fd2.mp3' silent='False' type='audio/mpeg'> </audio>
+</div><div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_20'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_20_1' ></div>
+</div>
+<div id ='CELImage_13_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_13_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='56.9052419354838' hFrame='54.866935483871' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_13_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_13_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='36.5221774193549' hFrame='76.7016129032258' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_13_2' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_13_2.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='35.7358870967742' hFrame='79.2338709677419' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CTextFrame_13_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_13_3_Paragraph_0" style = "text-align:center;">
+<span id = "CTextFrame_13_3_sp00" class="resizeText" size = "38" style =" font-size: 38px;font-family:'Times_New_Roman';  color: #0070C1;font-weight: bold; ">HÌNH ẢNH BIA VĨNH LĂNG VÀ RỒNG</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+<div id='CELPage_16' jumpid='16'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+<div id= '_01f5f905960c95388ac308364c0d50ca_CELPage_16'>
+<svg height='800' width='1280'>
+<g style= 'position:absolute ; z-index= 1' Fill='#7dc587' fill-opacity='1'>
+<path d='M1,95.75013 C1,95.75013 0,72.25013 1,67.00013 2,61.75013 7.00619,4.75013000000001 7.50671,2.75013000000001 8.00722000000002,0.750130000000013 26.02582,48.50013 26.02582,48.50013 L46.29673,36.75005 59.5604,78.2501100000001 C59.5604,78.2501100000001 56.05678,10.75001 55.30601,9.75001000000003 54.55523,8.75001000000003 82.33388,79.2501100000001 82.33388,79.2501100000001 L94.59654,10.75001 119.87259,80.2501100000001 126.87982,34.25005 141.14453,73.5001 167.92215,58.25008 181.68634,74.2501 220.97686,12.75002 C220.97686,12.75002 232.48874,75.7501 234.24055,75.7501 235.99235,75.7501 243.75035,45.00006 243.75035,45.00006 L263.02021,67.25009 286.79472,45.75006 304.06255,84.5001100000001 343.8536,46.50006 363.62397,79.0001100000001 391.65287,48.00006 402.91451,77.2501 391.90313,16.7500200000001 425.18746,69.25009 438.70138,57.25008 C438.70138,57.25008 444.45729,88.00012 445.45832,88.00012 446.45935,88.00012 463.22664,34.25005 463.22664,34.25005 L484.2483,82.0001100000001 498.01248,58.75008 518.28342,73.5001 C518.28342,73.5001 523.28855,39.50005 522.53777,36.25005 L547.31295,71.3751 563.57969,60.75008 563.9551,81.5001100000001 578.34491,36.00005 591.35832,90.75012 624.39238,73.2501 649.9187,91.37512 640.4089,41.12506 656.05002,72.3751 670.43988,41.00006 673.19272,72.8751 682.3271,55.1250700000001 713.73445,85.37512 720.86679,40.87506 741.6382,94.37513 765.0373,24.25003 789.0621,78.2501100000001 806.3299,40.87506 824.5988,79.5001100000001 835.485,72.7501 834.2337,70.6251 848.6235,0 867.3929,46.5000700000001 887.2883,35.50005 900.552,76.1251 896.5479,9.37502000000001 923.826,77.1251100000001 936.3388,9.62502000000001 961.1561,78.33344 967.6625,33.00005 983.5118,71.33343 1008.7045,56.66675 1022.7186,72.16677 1061.5915,11.66669 1075.1055,72.83343 1084.6153,43.50006 1103.6348,65.33342 1128.16,44.50006 1146.3454,82.83345 1184.5511,45.3334 1204.0716,76.33344 1231.9339,46.5000700000001 1244.7801,76.5001100000001 1233.2682,15.33336 1266.8027,65.83343 1279.8161,56.16675 1282.1519,63.33342 1282.1519,95.50013 z' transform='translate(0,703), scale(1,1)' ></g>
+</svg>
+<div class='_01f5f905960c95388ac308364c0d50ca_CELPage_16_1' ></div>
+</div>
+<div id ='CELVideo_14_0' class ='resizeFrame' size='0' >
+<svg class = 'svgFrame' borderwidth= '0' wFrame='99.7983870967741' hFrame='99.3951612903224' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= '#000000' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+<video id = 'vid_CELVideo_14_0' startTime ='0' source src='Data\CELVideo_14_0.mp4' maxVol='50' maxReplay='0' type = 'video/mp4' style='width: 100%; height: 100%; top: 0%; left: 0%; object-fit: fill; position: absolute;'>
+
+</video>
+
+</div>
+
+
+<div id = 'CTextFrame_14_1' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 3.5%;  height: 18.125%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='18.125' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_14_1_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+<div id = 'CTextFrame_14_2' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 79.375%; top: 22.875%;  height: 62.75%;left: 10.234375%;'>
+<svg class = 'svgFrame' borderwidth = '0' wFrame = '79.375' hFrame='62.75' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= 'transparent'; backgroundcolor= 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_14_2_Paragraph_0" style = "text-align:justify;">
+
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+                <!-- Begin CELQuestionPage_21 -->
+                <div id='CELQuestionPage_21' class='CELPage hidden' questiongroup='Nhóm mặc định' questiongrouptime='0' grouppass='0' groupfalse='0' groupid='1' questionresultshow='True' jumpid='21' score='10' passmess='Bạn đã đạt chất lượng của bài kiểm tra' failmess='Bạn không đạt chất lượng của bài kiểm tra' questype='Choice' mustanswer='True' maxtime='20' messtrue='Bạn đã trả lời đúng' messfalse='Bạn đã trả lời sai' messmiss='Đã hết thời gian trả lời.' groupresultshow='True' passpercent='50'>
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELQuestionPage_21'><svg height='800' width='1280'>
+</svg>
+<div  class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELQuestionPage_21_1' ></div></div><div id = 'QuestionContent_15_0' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 69.8034274193548%; top: 8.1048387096774%;  height: 12.4112903225806%;left: 14.7681451612903%;'>
+<svg class = 'svgFrame' borderwidth = '2' wFrame = '69.8034274193548' hFrame='12.4112903225806' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= '#808080' backgroundcolor = '#FFE59A'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%; overflow:auto;'>
+<p id = "QuestionContent_15_0_Paragraph_0" style = "text-align:center;">
+<span id = "QuestionContent_15_0_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #052F61;font-style: italic; font-weight: bold; ">Gác Chuông được xây dựng bằng chất liệu gì ?</span>
+</p>
+
+</div>
+
+</div>
+
+<div id = 'AnswerContent_15_0' class='_Frame'>
+<div id = 'AnswerContent_15_0_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_15_0_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_15_0_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">Xi măng</span>
+</p>
+
+</div>
+
+
+                        <div id='radCheckAnswerContent_15_0'>
+                            <label id='labelAnswerContent_15_0' class='CELQuestionPage_1_Label' >
+                                <input type='checkbox' id='radAnswerContent_15_0' class='CELQuestionPage_1_Answers_Chk' value='small' />
+                                <img id='imgRadCheckAnswerContent_15_0' class='CELQuestionPage_1_Answers_IMG' src='images/button/Question/normal.png'>
+                            </label>
+                        </div></div>
+
+<div id = 'AnswerContent_15_1' class='_Frame'>
+<div id = 'AnswerContent_15_1_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_15_1_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_15_1_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">Gạch </span>
+</p>
+
+</div>
+
+
+                        <div id='radCheckAnswerContent_15_1'>
+                            <label id='labelAnswerContent_15_1' class='CELQuestionPage_1_Label' >
+                                <input type='checkbox' id='radAnswerContent_15_1' class='CELQuestionPage_1_Answers_Chk' value='small' />
+                                <img id='imgRadCheckAnswerContent_15_1' class='CELQuestionPage_1_Answers_IMG' src='images/button/Question/normal.png'>
+                            </label>
+                        </div></div>
+
+<div id = 'AnswerContent_15_2' class='_Frame'>
+<div id = 'AnswerContent_15_2_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_15_2_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_15_2_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">Đá hoa cương</span>
+</p>
+
+</div>
+
+
+                        <div id='radCheckAnswerContent_15_2'>
+                            <label id='labelAnswerContent_15_2' class='CELQuestionPage_1_Label' >
+                                <input type='checkbox' id='radAnswerContent_15_2' class='CELQuestionPage_1_Answers_Chk' value='small' />
+                                <img id='imgRadCheckAnswerContent_15_2' class='CELQuestionPage_1_Answers_IMG' src='images/button/Question/normal.png'>
+                            </label>
+                        </div></div>
+
+<div id = 'AnswerContent_15_3' class='_Frame'>
+<div id = 'AnswerContent_15_3_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_15_3_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_15_3_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">Gỗ</span>
+</p>
+
+</div>
+
+
+                        <div id='radCheckAnswerContent_15_3'>
+                            <label id='labelAnswerContent_15_3' class='CELQuestionPage_1_Label' >
+                                <input type='checkbox' id='radAnswerContent_15_3' class='CELQuestionPage_1_Answers_Chk' value='small' />
+                                <img id='imgRadCheckAnswerContent_15_3' class='CELQuestionPage_1_Answers_IMG' src='images/button/Question/normal.png'>
+                            </label>
+                        </div></div>
+
+                <div id='ConfirmAnswerCELQuestionPage_21' class='ConfirmAnswer'>
+                    <div class='ConfirmAnswerLeft'>
+                        <div class='ConfirmAnswerLeft_Left'>
+                            <div class='ConfirmAnswerLeft_Left_btnPre'>
+                                <img style='width: auto; position: absolute; top: 0;' src='images/btnPreviousQues.png'>
+                            </div>
+                            <div class='ConfirmAnswerLeft_Left_btnNext'>
+                                <img style='width: auto; position: absolute; top: 0;' src='images/btnNextQues.png'>
+                            </div>
+                        </div>
+                        <div class='ConfirmAnswerLeft_Middle'>
+                            <div class='ConfirmAnswerLeft_Middle_Score'>
+                                <div class='ConfirmAnswerLeft_Middle_Score_Left'>Điểm</div>
+                                <div class='ConfirmAnswerLeft_Middle_Score_Right'>
+                                    <p class='ConfirmAnswerLeft_Middle_Score_Right_Number'>1</p>
+                                </div>
+                            </div>
+                            <div class='ConfirmAnswerLeft_Middle_Time'>
+                                <div class='ConfirmAnswerLeft_Middle_Time_Left'>Thời gian</div>
+                                <div class='ConfirmAnswerLeft_Middle_Time_Right'>
+                                    <p class='ConfirmAnswerLeft_Middle_Time_Right_Number'>00:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='ConfirmAnswerLeft_Right'>
+                            <div class='ConfirmAnswerLeft_Right_ShowResult'>
+                                <img src='images/showResult.png'>
+                                <div class='ConfirmAnswerLeft_Right_ShowResult_Content'>Hiển thị thông báo kết quả</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='ConfirmAnswerRight'>
+                        <div class='ConfirmAnswerRight_OnePage'>
+                            <p class='ConfirmAnswerRight_Content'>Xác nhận câu trả lời</p>
+                        </div>
+                        <div class='ConfirmAnswerRight_AllPage'>
+                            <p class='ConfirmAnswerRight_Content'>Gửi bài</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <!-- End of CELQuestionPage_21 -->
+                <!-- Begin CELQuestionPage_59 -->
+                <div id='CELQuestionPage_59' class='CELPage hidden' questiongroup='Nhóm mặc định' questiongrouptime='0' grouppass='0' groupfalse='0' groupid='1' questionresultshow='True' jumpid='59' score='10' passmess='Bạn đã đạt chất lượng của bài kiểm tra' failmess='Bạn không đạt chất lượng của bài kiểm tra' questype='TrueFalse' mustanswer='True' maxtime='20' messtrue='Bạn đã trả lời đúng' messfalse='Bạn đã trả lời sai' messmiss='Đã hết thời gian trả lời.' groupresultshow='True' passpercent='50'>
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELQuestionPage_59'><svg height='800' width='1280'>
+</svg>
+<div  class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELQuestionPage_59_1' ></div></div><div id = 'QuestionContent_16_0' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 76.7338709677419%; top: 11.5322580645161%;  height: 11.2641129032258%;left: 11.491935483871%;'>
+<svg class = 'svgFrame' borderwidth = '2' wFrame = '76.7338709677419' hFrame='11.2641129032258' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= '#808080' backgroundcolor = '#F9CBAC'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%; overflow:auto;'>
+<p id = "QuestionContent_16_0_Paragraph_0" style = "text-align:center;">
+<span id = "QuestionContent_16_0_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #052F61;font-style: italic; font-weight: bold; ">Tượng phật bà Quan âm nghìn mắt nghìn tay được tạc năm:</span>
+</p>
+
+</div>
+
+</div>
+
+<div id = 'AnswerContent_16_0' class='_Frame'>
+<div id = 'AnswerContent_16_0_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_16_0_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_16_0_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">1655</span>
+</p>
+
+</div>
+
+
+                        <div class='trueFalseAnswerRightBlock' status='0'>
+                            <div class='trueFalseAnswerRightBlock_Left'>
+                                <img class='trueFalseAnswerRightBlock_Left_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                            <div class='trueFalseAnswerRightBlock_Right'>
+                                <img class='trueFalseAnswerRightBlock_Right_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                        </div>
+</div>
+
+<div id = 'AnswerContent_16_1' class='_Frame'>
+<div id = 'AnswerContent_16_1_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_16_1_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_16_1_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">1565</span>
+</p>
+
+</div>
+
+
+                        <div class='trueFalseAnswerRightBlock' status='0'>
+                            <div class='trueFalseAnswerRightBlock_Left'>
+                                <img class='trueFalseAnswerRightBlock_Left_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                            <div class='trueFalseAnswerRightBlock_Right'>
+                                <img class='trueFalseAnswerRightBlock_Right_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                        </div>
+</div>
+
+<div id = 'AnswerContent_16_2' class='_Frame'>
+<div id = 'AnswerContent_16_2_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_16_2_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_16_2_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">1556</span>
+</p>
+
+</div>
+
+
+                        <div class='trueFalseAnswerRightBlock' status='0'>
+                            <div class='trueFalseAnswerRightBlock_Left'>
+                                <img class='trueFalseAnswerRightBlock_Left_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                            <div class='trueFalseAnswerRightBlock_Right'>
+                                <img class='trueFalseAnswerRightBlock_Right_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                        </div>
+</div>
+
+<div id = 'AnswerContent_16_3' class='_Frame'>
+<div id = 'AnswerContent_16_3_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_16_3_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_16_3_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">1656</span>
+</p>
+
+</div>
+
+
+                        <div class='trueFalseAnswerRightBlock' status='1'>
+                            <div class='trueFalseAnswerRightBlock_Left'>
+                                <img class='trueFalseAnswerRightBlock_Left_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                            <div class='trueFalseAnswerRightBlock_Right'>
+                                <img class='trueFalseAnswerRightBlock_Right_Img' src='images/button/Question/MultiChoice.png'>
+                            </div>
+                        </div>
+</div>
+
+                <div id='ConfirmAnswerCELQuestionPage_59' class='ConfirmAnswer'>
+                    <div class='ConfirmAnswerLeft'>
+                        <div class='ConfirmAnswerLeft_Left'>
+                            <div class='ConfirmAnswerLeft_Left_btnPre'>
+                                <img style='width: auto; position: absolute; top: 0;' src='images/btnPreviousQues.png'>
+                            </div>
+                            <div class='ConfirmAnswerLeft_Left_btnNext'>
+                                <img style='width: auto; position: absolute; top: 0;' src='images/btnNextQues.png'>
+                            </div>
+                        </div>
+                        <div class='ConfirmAnswerLeft_Middle'>
+                            <div class='ConfirmAnswerLeft_Middle_Score'>
+                                <div class='ConfirmAnswerLeft_Middle_Score_Left'>Điểm</div>
+                                <div class='ConfirmAnswerLeft_Middle_Score_Right'>
+                                    <p class='ConfirmAnswerLeft_Middle_Score_Right_Number'>1</p>
+                                </div>
+                            </div>
+                            <div class='ConfirmAnswerLeft_Middle_Time'>
+                                <div class='ConfirmAnswerLeft_Middle_Time_Left'>Thời gian</div>
+                                <div class='ConfirmAnswerLeft_Middle_Time_Right'>
+                                    <p class='ConfirmAnswerLeft_Middle_Time_Right_Number'>00:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='ConfirmAnswerLeft_Right'>
+                            <div class='ConfirmAnswerLeft_Right_ShowResult'>
+                                <img src='images/showResult.png'>
+                                <div class='ConfirmAnswerLeft_Right_ShowResult_Content'>Hiển thị thông báo kết quả</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='ConfirmAnswerRight'>
+                        <div class='ConfirmAnswerRight_OnePage'>
+                            <p class='ConfirmAnswerRight_Content'>Xác nhận câu trả lời</p>
+                        </div>
+                        <div class='ConfirmAnswerRight_AllPage'>
+                            <p class='ConfirmAnswerRight_Content'>Gửi bài</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <!-- End of CELQuestionPage_59 -->
+                <!-- Begin CELQuestionPage_60 -->
+                <div id='CELQuestionPage_60' class='CELPage hidden' questiongroup='Nhóm mặc định' questiongrouptime='0' grouppass='0' groupfalse='0' groupid='1' questionresultshow='True' jumpid='60' score='10' passmess='Bạn đã đạt chất lượng của bài kiểm tra' failmess='Bạn không đạt chất lượng của bài kiểm tra' questype='Cloze' mustanswer='True' maxtime='20' messtrue='Bạn đã trả lời đúng' messfalse='Bạn đã trả lời sai' messmiss='Đã hết thời gian trả lời.' groupresultshow='True' passpercent='50'>
+<div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELQuestionPage_60'><svg height='800' width='1280'>
+</svg>
+<div  class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELQuestionPage_60_1' ></div></div><div id = 'QuestionContent_17_0' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 86.3104838709677%; top: 17.5806451612903%;  height: 8.78225806451612%;left: 6.07358870967741%;'>
+<svg class = 'svgFrame' borderwidth = '2' wFrame = '86.3104838709677' hFrame='8.78225806451612' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= '#808080' backgroundcolor = '#FFF3CD'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%; overflow:auto;'>
+<p id = "QuestionContent_17_0_Paragraph_0" style = "text-align:center;">
+<span id = "QuestionContent_17_0_sp00" class="resizeText" size = "40" style =" font-size: 40px;font-family:'Times_New_Roman';  color: #052F61;font-style: italic; font-weight: bold; ">Hình tượng Rồng được hoàn thiện vào thời </span><span id = "QuestionContent_17_0_sp01" class="resizeText" size = "40" clozeId = "Cloze636699395296096261" style ="font-family:'Times New Roman";font-size: 40px; border-bottom:2.22222222222222px solid black; padding: 0px 20px;font-style: italic; font-weight: bold; ">__(1)__</span>
+</p>
+
+</div>
+
+</div>
+
+<div id = 'AnswerContent_17_0' class='_Frame DragableAnswer' realBorderColor='#808080' realBgc='#B3C6E7' loadTop ='44.491935483871' loadLeft='16.3508064516129' clozeId = 'Cloze636699395296096261'>
+<div id = 'AnswerContent_17_0_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_17_0_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_17_0_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">nhà Lê</span>
+</p>
+
+</div>
+
+</div>
+
+<div id = 'AnswerContent_17_1' class='_Frame DragableAnswer' realBorderColor='#808080' realBgc='#B3C6E7' loadTop ='44.2414919354839' loadLeft='58.9009324596774' clozeId = 'Interfering636699395322263679'>
+<div id = 'AnswerContent_17_1_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_17_1_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_17_1_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">nhà Trần</span>
+</p>
+
+</div>
+
+</div>
+
+<div id = 'AnswerContent_17_2' class='_Frame DragableAnswer' realBorderColor='#808080' realBgc='#B3C6E7' loadTop ='66.015685483871' loadLeft='15.9321824596774' clozeId = 'Interfering636699395379859815'>
+<div id = 'AnswerContent_17_2_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_17_2_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_17_2_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">nhà Lý</span>
+</p>
+
+</div>
+
+</div>
+
+<div id = 'AnswerContent_17_3' class='_Frame DragableAnswer' realBorderColor='#808080' realBgc='#B3C6E7' loadTop ='66.015685483871' loadLeft='58.6489163306452' clozeId = 'Interfering636699395429969688'>
+<div id = 'AnswerContent_17_3_right' class ='resizeFrame' size='1' >
+<p id = "AnswerContent_17_3_Paragraph_0" style = "text-align:justify;">
+<span id = "AnswerContent_17_3_sp00" class="resizeText" size = "37.3333333333333" style =" font-size: 37.3333333333333px;font-family:'Times_New_Roman';  color: #C00000;font-style: italic; font-weight: bold; ">nhà Nguyễn</span>
+</p>
+
+</div>
+
+</div>
+
+                <div id='ConfirmAnswerCELQuestionPage_60' class='ConfirmAnswer'>
+                    <div class='ConfirmAnswerLeft'>
+                        <div class='ConfirmAnswerLeft_Left'>
+                            <div class='ConfirmAnswerLeft_Left_btnPre'>
+                                <img style='width: auto; position: absolute; top: 0;' src='images/btnPreviousQues.png'>
+                            </div>
+                            <div class='ConfirmAnswerLeft_Left_btnNext'>
+                                <img style='width: auto; position: absolute; top: 0;' src='images/btnNextQues.png'>
+                            </div>
+                        </div>
+                        <div class='ConfirmAnswerLeft_Middle'>
+                            <div class='ConfirmAnswerLeft_Middle_Score'>
+                                <div class='ConfirmAnswerLeft_Middle_Score_Left'>Điểm</div>
+                                <div class='ConfirmAnswerLeft_Middle_Score_Right'>
+                                    <p class='ConfirmAnswerLeft_Middle_Score_Right_Number'>1</p>
+                                </div>
+                            </div>
+                            <div class='ConfirmAnswerLeft_Middle_Time'>
+                                <div class='ConfirmAnswerLeft_Middle_Time_Left'>Thời gian</div>
+                                <div class='ConfirmAnswerLeft_Middle_Time_Right'>
+                                    <p class='ConfirmAnswerLeft_Middle_Time_Right_Number'>00:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='ConfirmAnswerLeft_Right'>
+                            <div class='ConfirmAnswerLeft_Right_ShowResult'>
+                                <img src='images/showResult.png'>
+                                <div class='ConfirmAnswerLeft_Right_ShowResult_Content'>Hiển thị thông báo kết quả</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='ConfirmAnswerRight'>
+                        <div class='ConfirmAnswerRight_OnePage'>
+                            <p class='ConfirmAnswerRight_Content'>Xác nhận câu trả lời</p>
+                        </div>
+                        <div class='ConfirmAnswerRight_AllPage'>
+                            <p class='ConfirmAnswerRight_Content'>Gửi bài</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <!-- End of CELQuestionPage_60 -->
+<div id='CELPage_24' jumpid='24'  class='CELPage hidden' style="height:100%; width:100%; top:0;left:0; position:absolute; "> 
+
+<div id='CELPage_24_Demonstration' class='hidden' style ="height:0px; width:0px; position: absolute; top:0;left:0"> 
+    <video startTimeDemontration='0' class='VideoDemonstration' src='' silent='False' type = 'video/mp4'></video>
+    <audio startTimeDemontration='0' class='AudioDemonstration' src='Data/2c691621-942d-4939-8e19-f9d5657f0a87.mp3' silent='False' type='audio/mpeg'> </audio>
+</div><div id= '_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_24'>
+<svg height='800' width='1280'>
+</svg>
+<div class='_f8c8cf9ad7a39d8434f1e71d3cec53f9_CELPage_24_1' ></div>
+</div>
+<div id ='CELImage_18_0' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_18_0.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='37.3588709677419' hFrame='36.4637096774194' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_18_1' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_18_1.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='26.5070564516129' hFrame='66.8709677419355' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id ='CELImage_18_2' class ='resizeFrame' size='0' >
+<img src='Data\png\CELImage_18_2.png' style='width:100%; height: 100%; position: absolute;'/><svg class = 'svgFrame' borderwidth= '0' wFrame='44.0524193548387' hFrame='38.4798387096775' style='position: absolute; width: 100%; height: 100%' strokedash ='' bordercolor= 'transparent' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%'/>
+</svg>
+
+</div>
+
+
+<div id = 'CTextFrame_18_3' class ='resizeFrame' style='word-wrap:break-word; position: absolute; width: 65.3931451612903%; top: 4.03225806451614%;  height: 9.25%;left: 16.633064516129%;'>
+<svg class = 'svgFrame' borderwidth = '2' wFrame = '65.3931451612903' hFrame='9.25' style='position: absolute; width: 100%; height: 100%;' strokedash =''  bordercolor= '#052F61' backgroundcolor = 'transparent'>
+<path style='position: absolute; width: 100%; height: 100%;'/>
+</svg>
+<div style='word-wrap:break-word; position: absolute;width: 100%; height: 100%;'>
+<p id = "CTextFrame_18_3_Paragraph_0" style = "text-align:left;">
+<span class ='resizeText' size ='64' style='font-family: Times New Roman; font-size: 64px; font-style: Normal; font-weight:500;text-decoration: Normal;  color: #C00000;text-shadow:
+                              -1px -1px 0 #A50E82,
+                              -1px 1px 0 #A50E82,
+                              -1px 0 0 #A50E82,
+                              1px -1px 0 #A50E82,
+                              1px 1px 0 #A50E82,
+                              1px 0 0 #A50E82,
+                              0 -1px 0 #A50E82,
+                              0 1px 0 #A50E82;'>Chào tạm biệt, hẹn gặp lại !</span>
+</p>
+
+</div>
+
+</div>
+
+
+ </div> 
+
+            <div style='position: absolute; top: 0.5%;right: 0.5%; width: 15%;height: 6%; z-index: 490000'><img id='wtmImage' style='position: absolute;top: 0;right: 0;height: 100%;' src=''></div>
+            </div>
+            <!-- End left main content -->
+            <!-- Begin right main content -->
+            <div id='rightMainContent'>
+                <div id='mainRightTop'>
+                    <div id='mainTittle'>
+                        <p id='mainTittleContent'>MỘT SỐ CÔNG TRÌNH TIÊU BIỂU CỦA MT THỜI LÊ</p>
+                    </div>
+                    <div id='mainRightTopBotLeft'>
+                        <img id='mainRightTopBotLeft' src='images\IMG-0640.JPG'>
+                        <video id='mainRightTopBotLeft_Video' style='visibility: hidden' src=''>
+                    </div>
+                    <div id='mainRightTopBotRight'>
+                        <table id='tableRightTop' style='width:100%; height: 100%;'>
+                            <tr class='mainRightTopBotRight'><td class='seo-bold'>Giáo viên:</td></tr>
+                            <tr class='mainRightTopBotRight'><td class='seo-light'>Trần Thị Hằng</td></tr>
+                            <tr class='mainRightTopBotRight'><td class='seo-bold'>Môn học:</td></tr>
+                            <tr class='mainRightTopBotRight'><td class='seo-light'>Mỹ thuật</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div id='mainRightBot'>
+                    <div id='mainRightBotHeader'>
+                        <div id='mainRightBotHeaderLeft' class='mainRightBotHeaderActive'><p id='mainRightBotHeaderContent'>DÀN BÀI</p></div>
+                        <div id='mainRightBotHeaderRight'><p id='mainRightBotHeaderContentRight'>XEM TRƯỚC</p></div>
+                    </div>
+                    <div id='mainRightBotPageView'>
+                        <div class='mainRightBotPageList'>
+                            <div id='tblPageList' style='width:94%; height: 100%;'>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_41'>Trang  đầu</div>
+                            <div class='pageNameRight'>00:22</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_1'>Bài cũ</div>
+                            <div class='pageNameRight'>00:38</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_2'>đề bài</div>
+                            <div class='pageNameRight'>00:27</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_17'>mục tiêu</div>
+                            <div class='pageNameRight'>00:21</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_5'>chùa Keo</div>
+                            <div class='pageNameRight'>00:38</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_6'>gác chuông</div>
+                            <div class='pageNameRight'>00:50</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_10'>video chùa keo</div>
+                            <div class='pageNameRight'>02:01</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_7'>Video kết luận chùa keo</div>
+                            <div class='pageNameRight'>00:27</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_31'>Video GT tượng phật bà</div>
+                            <div class='pageNameRight'>00:17</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_11'>tượng phật bà</div>
+                            <div class='pageNameRight'>00:43</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_13'>hình ảnh phật bà</div>
+                            <div class='pageNameRight'>00:37</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_32'>video giới thiệu Rồng</div>
+                            <div class='pageNameRight'>00:43</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_14'>Hình Rồng</div>
+                            <div class='pageNameRight'>00:29</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_20'>Ảnh Bia- Rồng</div>
+                            <div class='pageNameRight'>00:34</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_16'>Video</div>
+                            <div class='pageNameRight'>03:10</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELQuestionPage_21'>Trang câu hỏi tương tác</div>
+                            <div class='pageNameRight'>00:22</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELQuestionPage_59'>Trang câu hỏi tương tác</div>
+                            <div class='pageNameRight'>00:22</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELQuestionPage_60'>Trang câu hỏi tương tác</div>
+                            <div class='pageNameRight'>00:22</div></div>
+                            <div class='pageName'><div class='pageNameLeft' id='RightMenuCELPage_24'>VIDEO kết thúc bài</div>
+                            <div class='pageNameRight'>00:38</div></div>
+                            </div>
+                        </div>
+                        <div class='mainRightBotPageList'>
+                            <div id='tblPageListThumb' style='width:94%; height: 100%;'>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_41.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_41'>Trang  đầu</div>
+                                <div class='pageNameRightThumb'>00:22</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_1.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_1'>Bài cũ</div>
+                                <div class='pageNameRightThumb'>00:38</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_2.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_2'>đề bài</div>
+                                <div class='pageNameRightThumb'>00:27</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_17.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_17'>mục tiêu</div>
+                                <div class='pageNameRightThumb'>00:21</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_5.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_5'>chùa Keo</div>
+                                <div class='pageNameRightThumb'>00:38</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_6.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_6'>gác chuông</div>
+                                <div class='pageNameRightThumb'>00:50</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_10.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_10'>video chùa keo</div>
+                                <div class='pageNameRightThumb'>02:01</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_7.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_7'>Video kết luận chùa keo</div>
+                                <div class='pageNameRightThumb'>00:27</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_31.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_31'>Video GT tượng phật bà</div>
+                                <div class='pageNameRightThumb'>00:17</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_11.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_11'>tượng phật bà</div>
+                                <div class='pageNameRightThumb'>00:43</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_13.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_13'>hình ảnh phật bà</div>
+                                <div class='pageNameRightThumb'>00:37</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_32.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_32'>video giới thiệu Rồng</div>
+                                <div class='pageNameRightThumb'>00:43</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_14.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_14'>Hình Rồng</div>
+                                <div class='pageNameRightThumb'>00:29</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_20.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_20'>Ảnh Bia- Rồng</div>
+                                <div class='pageNameRightThumb'>00:34</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_16.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_16'>Video</div>
+                                <div class='pageNameRightThumb'>03:10</div>                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELQuestionPage_21.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELQuestionPage_21'>Trang câu hỏi tương tác</div>
+                                <div class='pageNameRightThumb'>00:22</div>
+                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELQuestionPage_59.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELQuestionPage_59'>Trang câu hỏi tương tác</div>
+                                <div class='pageNameRightThumb'>00:22</div>
+                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELQuestionPage_60.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELQuestionPage_60'>Trang câu hỏi tương tác</div>
+                                <div class='pageNameRightThumb'>00:22</div>
+                            </div>
+                            <div class='pageNameThumb'>
+                                <div class='pageNameThumbIMG' style="background-size: 100% 100%; background-position: center; background-image: url('Data/ThumbImage/CELPage_24.png') "></div>
+                                <div class='pageNameLeftThumb' id='RightMenuTCELPage_24'>VIDEO kết thúc bài</div>
+                                <div class='pageNameRightThumb'>00:38</div>                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End right main content -->
+
+            <!-- Functions area -->
+            <div id='mainBottom'>
+                <div id='mainBottomFull'>
+                    <div id='mainBottomBtnPV' data-function='back' class='clear-nextback'></div>
+                    <div id='mainBottomBtnPlayPause' class='btnPlay' data-function='stop'></div>
+                    <div id='mainBottomBtnPause' class='btnPlay' data-function='play' style='display: none'></div>
+                    <div id='mainBottomBtnNext' data-function='next' class='clear-nextback'></div>
+                    <div id='mainBottomSlide'>
+                        <div id='mainBottomTraySlideTimeline'>
+                            <div class='Timeline'>
+                                <div id='slider_Cpage_0'></div>
+                            </div>
+                        </div>
+                        <div id='slider-value' class='hidden'></div>
+                    </div>
+                    <div id='mainBottomBtnVolumn'></div>
+                    <div id='mainBottomBtnVolumnMute' style='display: none;'></div>
+                    <div id='mainBottomVolumnSlide'>
+                        <div id='mainBottomVolumnSlideTray'></div>
+                    </div>
+                    <div id='mainBottomBtnReplay'></div>
+                    <div id='mainBottomBtnZoom'></div>
+                    <div id='mainBottomBtnPVDisable'></div>
+                    <div id='mainBottomBtnPlayPauseDisable'></div>
+                    <div id='mainBottomBtnNextDisable'></div>
+                    <div id='mainBottomSlideDisable'>
+                        <div id='mainBottomToggleSlide'></div>
+                        <div id='mainBottomTraySlide'></div>
+                    </div>
+                    <div id='mainBottomBtnVolumnDisable'></div>
+                    <div id='mainBottomVolumnSlideDisable'>
+                        <div id='mainBottomVolumnSlideTray'></div>
+                    </div>
+                    <div id='mainBottomBtnReplayDisable'></div>
+                    <div id='mainBottomBtnZoomDisable'></div>
+                </div>
+            </div>
+            <!-- End Functions area -->
+        </div>
+    </div>
+<div style='position:absolute; top:0;left:0;width:100%;height:100%; z-index:500000;background-color:white'><div id='loadingPage' style='position:absolute; top:0;left:0;width:100%;height:100%;'></div></div>
+<div style='display: none'><audio id='BGAudio'></audio></div>
+</body>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript'>var everythingLoaded = setInterval(function() {if (/loaded|complete/.test(document.readyState)) {clearInterval(everythingLoaded);init();}}, 10);</script>
+    <script type='text/javascript' src='js/mainJS.js'></script>
+    <script type='text/javascript' src='js/saveSvgAsPng.js'></script>
+    <script type='text/javascript' src='js/jsAnimate.js'></script>
+    <script type='text/javascript' src='js/jsAnimateObject.js'></script>
+    <script type='text/javascript' src='js/jsTrangDuLieuThuong.js'></script>
+    <script type='text/javascript' src='js/questionjs.js'></script>
+    <script type='text/javascript' async src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</html>
